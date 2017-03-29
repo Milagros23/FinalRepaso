@@ -16,7 +16,6 @@ window.onload=function(){
    var apellido = document.getElementById("apellido").value;
    var email = document.getElementById("email").value;
    var password = document.getElementById("password").value;
-
    if(nombre.length!=0 && apellido.length!=0 && email.length!=0 && password.length!=0){
      console.log(new Coder(nombre,apellido,email,password));
      localStorage.setItem("coders",JSON.stringify(new Coder(nombre,apellido,email,password)));
@@ -28,6 +27,5 @@ window.onload=function(){
      indicacion.innerText = "Todos los campos son obligatorios"
    }
 
-   if()
  });
 }
