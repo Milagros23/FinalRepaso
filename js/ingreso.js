@@ -2,7 +2,6 @@ window.onload=function(){
   document.getElementById("form3").onsubmit=function(e){
    e.preventDefault();
  }
-
  document.getElementById("iniciaSesion").addEventListener("click",function(){
    var email = document.getElementById("email").value;
    var password = document.getElementById("password").value;
@@ -14,6 +13,10 @@ window.onload=function(){
      var mensaje = document.getElementById("llenarDatos2");
      mensaje.innerText = "Todos los campos son obligatorios"
    }
-
  });
+
+  	document.getElementsByTagName("button")[0].addEventListener("click",function(){
+ 		window.location="coder.html"
+ 	})
+
 }
